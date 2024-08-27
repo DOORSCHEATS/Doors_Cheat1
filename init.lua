@@ -40,3 +40,5 @@ local function _init()
 		end
 	end)
 end
+
+_init()
