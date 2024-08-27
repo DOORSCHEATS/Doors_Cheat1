@@ -1,8 +1,10 @@
 local function _init()
 	if _G.AlreadyRan then
 		warn("you already ran this lil bro.")
-		return
+		return	
 	end
+
+	print("sup, thanks for using MHub")
 
 	local MHubUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("MHub")
 
@@ -29,7 +31,7 @@ local function _init()
 	TitleMain.BackgroundTransparency = 1
 	TitleMain.Size = UDim2.fromScale(0.97, 0.063)
 	TitleMain.Position = UDim2.fromScale(0.015, 0)
-
+ 
 	TitleMain.Text = string.format("MHub DOORS | Welcome : %s", game.Players.LocalPlayer.Name)
 
 	game.UserInputService.InputBegan:Connect(function(Input)
