@@ -1,3 +1,18 @@
+local Infos = {
+	AlreadyRan = false
+}
+
+for i, v in Infos do
+	if _G[i] then return end
+	
+	_G[i] = v
+end
+
+if _G.AlreadyRan == true then
+	warn("you already ran this lil bro.")
+	return
+end
+
 local MHubUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("MHub")
 
 MHubUI = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
