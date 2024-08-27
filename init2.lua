@@ -5,7 +5,7 @@ local function _init()
 	else
 		_G.AlreadyRan = true	
 	end
-	
+
 	print(_G.AlreadyRan, "thanks for using MHub")
 
 	local MHubUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("MHub")
@@ -35,7 +35,8 @@ local function _init()
 	TitleMain.Position = UDim2.fromScale(0.015, 0)
 	TitleMain.TextScaled = true
 	TitleMain.TextColor3 = Color3.fromRGB(255, 255, 255)
- 
+	TitleMain.Font = Enum.Font.Code
+	
 	TitleMain.Text = string.format("MedHub DOORS | Welcome : %s", game.Players.LocalPlayer.Name)
 
 	game.UserInputService.InputBegan:Connect(function(Input)
