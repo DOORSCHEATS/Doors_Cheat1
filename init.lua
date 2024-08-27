@@ -1,10 +1,12 @@
 local function _init()
 	if _G.AlreadyRan then
 		warn("you already ran this lil bro.")
-		return	
+		return
+	else
+		_G.AlreadyRan = true	
 	end
 
-	print("sup, thanks for using MHub")
+	print(_G.AlreadyRan, "sup, thanks for using MHub")
 
 	local MHubUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("MHub")
 
