@@ -5,8 +5,8 @@ local function _init()
 	else
 		_G.AlreadyRan = true	
 	end
-
-	print(_G.AlreadyRan, "sup, thanks for using MHub")
+	
+	print(_G.AlreadyRan, "thanks for using MHub")
 
 	local MHubUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("MHub")
 
