@@ -33,13 +33,17 @@ local function _init()
 	TitleMain.BackgroundTransparency = 1
 	TitleMain.Size = UDim2.fromScale(0.97, 0.063)
 	TitleMain.Position = UDim2.fromScale(0.015, 0)
+	TitleMain.TextScaled = true
+	TitleMain.TextColor3 = Color3.fromRGB(255, 255, 255)
  
-	TitleMain.Text = string.format("MHub DOORS | Welcome : %s", game.Players.LocalPlayer.Name)
+	TitleMain.Text = string.format("MedHub DOORS | Welcome : %s", game.Players.LocalPlayer.Name)
 
 	game.UserInputService.InputBegan:Connect(function(Input)
 		if Input.KeyCode == Enum.KeyCode.Home then
 			if MHubUI then
 				MHubUI:Destroy()
+
+				_G.AlreadyRan = false
 			end
 		end
 	end)
