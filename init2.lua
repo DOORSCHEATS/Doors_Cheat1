@@ -31,7 +31,7 @@ local function _init()
 
 	TitleMain.Name = "Title"
 	TitleMain.BackgroundTransparency = 1
-	TitleMain.Size = UDim2.fromScale(1, 1)
+	TitleMain.Size = UDim2.fromScale(1, 0.065)
 	TitleMain.Position = UDim2.fromScale(0, 0)
 	TitleMain.TextScaled = true
 	TitleMain.TextColor3 = Color3.fromRGB(255, 255, 255)
